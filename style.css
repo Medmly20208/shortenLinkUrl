@@ -1,7 +1,9 @@
 /*Header Customize*/
 
 body {
-    margin: 5% 8%;
+    margin:0 auto;
+    width: 90vw;
+    margin-top: 50px;
     overflow-x: hidden;
     background-color: white;
 }
@@ -223,11 +225,11 @@ input:focus {
     opacity: 0.9;
 }
 
-.di {
+.visible {
     visibility: visible;
 }
 
-.do {
+.hidden {
     visibility: hidden;
 }
 
@@ -374,10 +376,10 @@ input:focus {
     background-image: url("images/bg-shorten-desktop.svg");
     background-size: cover;
     background-color: hsl(255, 11%, 22%);
-    width: 120%;
+    width: 100%;
+   
     height: 200px;
     padding-top: 30px;
-    margin-left: -100px;
 }
 
 .upfooter h2 {
@@ -391,9 +393,9 @@ input:focus {
     justify-content: space-between;
     padding-bottom: 50px;
     margin-bottom: -60px;
-    width: 120%;
+    width: 100%;
     background-color: hsl(255, 11%, 22%);
-    margin-left: -100px;
+    
 }
 
 .logo {
@@ -461,7 +463,7 @@ a:hover {
 @media screen and (max-width:970px) {
     body {
         overflow-x: hidden;
-        margin: 0px;
+        margin: 0px auto;
         padding: 0px;
     }
     .left nav,
