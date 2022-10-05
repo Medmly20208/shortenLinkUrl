@@ -31,7 +31,7 @@ for (let i = 0; i < icon.length; i++) {
 }
 
 async function get(urltoShort) {
-    let rep = await fetch(`https://api.shrtco.de/v2/shorten?url=${urltoShort}/very/long/link.html`)
+    let rep = await fetch(`https://api.shrtco.de/v2/shorten?url=${urltoShort}`)
     let repjs = await rep.json()
     if (repjs["ok"] == false) {
         inputField.classList.add("di")
