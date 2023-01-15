@@ -1,4 +1,4 @@
-# Ecommerce store
+# shorten link website
 
 ### a website that shorten your links.
 
@@ -9,7 +9,7 @@
 
 # Built with 
 
- ### built with html,css,javascript and [bitly](https://app.bitly.com/bbt2/)
+ ### built with html,css,javascript and [bitly API](https://app.bitly.com/bbt2/)
 
 # Live demo
 
