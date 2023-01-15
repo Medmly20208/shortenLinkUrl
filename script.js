@@ -30,14 +30,21 @@ for (let i = 0; i < icon.length; i++) {
 }
 
 async function get(urltoShort) {
-  let rep = await fetch(`https://api.shrtco.de/v2/shorten?url=${urltoShort}`);
+  let rep = await fetch(`https://api-ssl.bitly.com/v4/shorten`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: "339c9f20877c9b39e23a3326925e75fda1fa7243",
+    },
+    body: JSON.stringify({ long_url: urltoShort }),
+  });
   let repjs = await rep.json();
   if (repjs["ok"] == false) {
     inputField.classList.add("visible");
     inputField.classList.remove("hidden");
   } else {
     inputField.classList.add("hidden");
-    result = repjs["result"]["full_short_link3"];
+    result = repjs.link;
 
     dv = document.createElement("div");
     dv.classList.add("url");
